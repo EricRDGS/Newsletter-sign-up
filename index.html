@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-newsletter">
+        <section class="sections-newsletter main-section" id="section-newsletter">
+            <div class="info-newsletter">
+                <h2>Stay updated!</h2>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+                <form class="label-email">
+                    <div class="label-error">
+                        <label for="email">Email address</label>
+                        <p class="to-hide" id="paragraph">Valid email required</p>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="email@company.com" class="email">
+                    <button type="button" class="btn" id="btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+            <picture class="image-newsletter">
+                <source media="(max-width: 500px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+                <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+            </picture>
+        </section>
+        <section class="section-thanks to-hide" id="section-thanks">
+            <img src="assets/images/icon-success.svg" alt="icon">
+            <h2>Thanks for subcribing!</h2>
+            <p>A confirmation email has been sent to <span id="email-user"></span>. Please open it and click the button inseide to confirm your subscription.</p>
+            <button type="button" id="btn-thanks">Dismiss message</button>
+        </section>
+    </main>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
